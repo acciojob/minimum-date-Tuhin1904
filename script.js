@@ -1,5 +1,10 @@
 function minDate(dates) {
   //write you code here
+	// console.log("Date are:",dates)
+	const sortedDates = [...dates].sort((a,b)=> new Date(a) - new Date(b));
+
+	return sortedDates[0];
+	
 }
 
 // Do not change the code
